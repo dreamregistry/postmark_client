@@ -40,7 +40,7 @@ output "POSTMARK_SERVER_KEY" {
     arn: aws_ssm_parameter.postmark_server_key.arn
     key: aws_ssm_parameter.postmark_server_key.name
     region: data.aws_region.current.name
-    type: ssm
+    type: "ssm"
   }
 }
 
